@@ -9,7 +9,7 @@ pipeline {
 	}
 	stage('Build') {
 	    steps {
-		sh '/home/gamut/distros/apache-maven-3.6.1/bin/mvn install'
+		sh '/home/gamut/distros/apache-maven-3.6.1/bin/mvn install -DBuildNo=${BUILD_NUMBER}'
 	}
 	    }
 	stage('Deployment') {
