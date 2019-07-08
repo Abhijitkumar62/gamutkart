@@ -15,7 +15,7 @@ pipeline {
 	stage('Deployment') {
 	    steps {
 		sh  'cp target/gamutkart.war /home/gamut/distros/apache-tomcat-8.5.42/webapps'
-		sh '"JAVA_HOME=/home/gamut/distros/jdk1.8.0_151" "/home/gamut/distros/apache-tomcat-8.5.42/bin/startup.sh"'
+		sh '"JAVA_HOME=/home/gamut/distros/jdk1.8.0_211" "/home/gamut/distros/apache-tomcat-8.5.42/bin/startup.sh"'
 	    }
 	}
 
